@@ -7,4 +7,13 @@
 }
 body {
   overflow-x: hidden;
+  height: 100vh;
 }
+::-webkit-scrollbar {
+  width: 7px;
+  background: rgba(245, 5, 5, 0.082);
+  &-thumb {
+    background: #222;
+  }
+}
+

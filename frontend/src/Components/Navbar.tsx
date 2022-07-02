@@ -19,11 +19,11 @@ export default function Navbar() {
   
   return (
     <>
-      <div className="w-full h-full text-white">
+      <div className="w-full h-full">
         <div className="flex flex-no-wrap">
           {/* Sidebar starts */}
 
-          <div className="absolute lg:relative w-80 h-screen shadow bg-color-1 hidden lg:block overflow-y-scroll">
+          <div className="absolute lg:relative w-80 h-screen shadow hidden lg:block overflow-hidden overflow-y-scroll">
             <div className="h-16 w-full flex items-center px-8 mt-4">
               <h1>logo</h1>
             </div>
@@ -219,7 +219,8 @@ export default function Navbar() {
               
             </nav>
             {/* Navigation ends */}
-            <div className="container mx-auto py-10 px-10">
+            <div className="container mx-auto py-10 px-10 sec">
+              
               <div className="w-full h-full">
                 {/* Place your content here */}
               </div>

@@ -1,10 +1,10 @@
 import React from 'react'
 import { BsCurrencyDollar } from 'react-icons/bs'
 import { GoPrimitiveDot } from 'react-icons/go'
-import { Stacked, Pie, Button } from '../Components'
+import LineChart from '../Components/Charts/LineCart'
 import { earningData, SparklineAreaData, ecomPieChartData } from '../Data/dummy'
 import { useGlobalContext } from '../Contexts/ContextProvider'
-import { stackedCustomSeries } from '../Data/dummy'
+import { stackedCustomSeries } from './../Data/dummy'
 import {
 	ChartComponent,
 	SeriesCollectionDirective,
@@ -17,6 +17,8 @@ import {
 	ILoadedEventArgs,
 	ChartTheme
 } from '@syncfusion/ej2-react-charts'
+import Stacked from '../Components/Charts/Stacked'
+import Pie from '../Components/Charts/Pie'
 
 const Ecommerce: React.FC = () => {
 	return (
