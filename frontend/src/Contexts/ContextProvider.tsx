@@ -10,7 +10,7 @@ interface ContextProviderProps {
 }
 
 const initialState: AppContextInterface = {
-	activeMenu: true,
+	activeMenu: false,
 	setActiveMenu: () => {}
 }
 
@@ -21,7 +21,7 @@ export const useGlobalContext = () => useContext(StateContext)
 export const ContextProvider: React.FC<ContextProviderProps> = ({
 	children
 }) => {
-	const [activeMenu, setActiveMenu] = useState(true)
+	const [activeMenu, setActiveMenu] = useState(false)
 	return (
 		<StateContext.Provider
 			value={{

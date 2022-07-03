@@ -1,10 +1,7 @@
 import React from 'react'
-import { BsCurrencyDollar } from 'react-icons/bs'
 import { GoPrimitiveDot } from 'react-icons/go'
-import LineChart from '../Components/Charts/LineCart'
 import { earningData, SparklineAreaData, ecomPieChartData } from '../Data/dummy'
-import { useGlobalContext } from '../Contexts/ContextProvider'
-import { stackedCustomSeries } from './../Data/dummy'
+import { stackedCustomSeries } from '../Data/dummy'
 import {
 	ChartComponent,
 	SeriesCollectionDirective,
@@ -17,19 +14,17 @@ import {
 	ILoadedEventArgs,
 	ChartTheme
 } from '@syncfusion/ej2-react-charts'
-import Stacked from '../Components/Charts/Stacked'
-import Pie from '../Components/Charts/Pie'
 
 const Ecommerce: React.FC = () => {
 	return (
 		<div className="mt-12 bg-main-bg">
 			<div className="flex flex-wrap lg:flex-nowrap justify-center gap-5">
-				<div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-40 rounded-xl w-full lg:w-80 p-4 mx-3 pt-9 bg-hero-pattern bg-no-repeat bg-cover bg-center flex flex-col justify-between">
+				<div className="bg-white dark:bg-secondary-dark-bg h-40 rounded-xl w-full lg:w-80 p-4 mx-3 pt-9 bg-hero-pattern bg-no-repeat bg-cover bg-center flex flex-col justify-between">
 					<div>
-						<h3 className="text-gray-400 font-bold">Earnings</h3>
+						<h3 className="font-bold">Earnings</h3>
 						<p className="text-xl font-semibold">$63,448.78</p>
 					</div>
-					<button className="text-white bg-orange-300 w-fit p-2 rounded-md">
+					<button className=" bg-orange-300 w-fit p-2 rounded-md">
 						Download
 					</button>
 				</div>
@@ -70,7 +65,7 @@ const Ecommerce: React.FC = () => {
 				</div>
 			</div>
 			<div className="flex gap-10 flex-wrap justify-center">
-				<div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780">
+				<div className="bg-white dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780">
 					<div className="flex justify-between">
 						<p className="font-semibold text-xl">Revenu Updates</p>
 						<p className="flex items-center gap-4">

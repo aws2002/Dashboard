@@ -140,7 +140,7 @@ const customerGridStatus = (props:any) => (
     <p>{props.Status}</p>
   </div>
 );
-export const areaPrimaryXAxis = {
+export const areaPrimaryXAxis:any= {
   valueType: 'DateTime',
   labelFormat: 'y',
   majorGridLines: { width: 0 },
@@ -354,7 +354,7 @@ export const ColorMappingPrimaryYAxis = {
   title: 'Temperature',
 };
 
-export const FinancialPrimaryXAxis = {
+export const FinancialPrimaryXAxis:any = {
   valueType: 'DateTime',
   minimum: new Date('2016, 12, 31'),
   maximum: new Date('2017, 9, 30'),
