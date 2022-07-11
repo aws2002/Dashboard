@@ -159,7 +159,7 @@ export const areaPrimaryYAxis = {
   labelStyle: { color: 'gray' },
 
 };
-export const barPrimaryXAxis = {
+export const barPrimaryXAxis:any = {
   valueType: 'Category',
   interval: 1,
   majorGridLines: { width: 0 },
@@ -340,7 +340,7 @@ export const rangeColorMapping = [
 
 ];
 
-export const ColorMappingPrimaryXAxis = {
+export const ColorMappingPrimaryXAxis:any = {
   valueType: 'Category',
   majorGridLines: { width: 0 },
   title: 'Months',
@@ -3197,7 +3197,7 @@ export const stackedCustomSeries = [
 
 ];
 
-export const stackedPrimaryXAxis = {
+export const stackedPrimaryXAxis:any = {
   majorGridLines: { width: 0 },
   minorGridLines: { width: 0 },
   majorTickLines: { width: 0 },
@@ -3573,7 +3573,14 @@ export const kanbanData = [
   },
 ];
 
-export const financialChartData = [
+export const financialChartData : {
+  x: Date;
+  open: number;
+  high: number;
+  low: number;
+  close: number;
+  volume: number;
+}[]= [
   {
     x: new Date('2012-04-02'),
     open: 85.9757,
